@@ -2,7 +2,12 @@
 
 ## chrome
 
-> [see chrome store listing[(#)
+> [see chrome store listing](#)
+
+### development
+
+- nodejs 14+
+- chrome 90+
 
 ## license
 
