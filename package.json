@@ -1,0 +1,25 @@
+{
+  "name": "walletconnect-ext",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "@walletconnect/web3-provider": "^1.6.6",
+    "eth-provider": "^0.9.4",
+    "web3": "^1.6.0"
+  },
+  "scripts": {
+    "build": "npx webpack --config webpack.config.js && node src/main.js",
+    "extract": "mkdir .ext && cp -a dist .ext/ && cp -a img .ext/ && cp manifest.json .ext/ && cd .ext && zip -r ../build.zip . && cd .. && rm -rf .ext",
+    "safari": "echo yes | xcrun safari-web-extension-converter --swift --no-open --bundle-identifier org.web3connect.Web3connect --project-location ./safari/ ./dist"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.159",
+    "@walletconnect/types": "^1.6.6",
+    "prettier": "^2.4.1",
+    "webpack": "4.x",
+    "webpack-cli": "3.x",
+    "terser-webpack-plugin": "^4.2.3"
+  }
+}
