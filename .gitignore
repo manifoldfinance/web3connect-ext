@@ -3,3 +3,4 @@ dist
 safari
 .ext
 build.zip
+.DS_Store
