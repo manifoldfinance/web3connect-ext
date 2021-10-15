@@ -1,9 +1,9 @@
-const path = require("path");
-const TerserPlugin = require("terser-webpack-plugin");
+const path = require('path');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
-  mode: "production",
-  entry: "./src/provider.js",
+  mode: 'production',
+  entry: './src/provider.js',
   optimization: {
     minimizer: [
       new TerserPlugin({
@@ -15,7 +15,7 @@ module.exports = {
     hints: false,
   },
   output: {
-    filename: "provider.js",
-    path: path.resolve(__dirname, "dist"),
+    filename: 'provider.js',
+    path: path.resolve(__dirname, 'dist'),
   },
 };

@@ -6,6 +6,8 @@
   "license": "MIT",
   "dependencies": {
     "@walletconnect/web3-provider": "^1.6.6",
+    "@walletconnect/types": "^1.6.6",
+    "@types/chrome": "^0.0.159",
     "eth-provider": "^0.9.4",
     "web3": "^1.6.0"
   },
@@ -15,8 +17,6 @@
     "safari": "echo yes | xcrun safari-web-extension-converter --swift --no-open --bundle-identifier org.web3connect.Web3connect --project-location ./safari/ ./dist"
   },
   "devDependencies": {
-    "@types/chrome": "^0.0.159",
-    "@walletconnect/types": "^1.6.6",
     "prettier": "^2.4.1",
     "webpack": "4.x",
     "webpack-cli": "3.x",
